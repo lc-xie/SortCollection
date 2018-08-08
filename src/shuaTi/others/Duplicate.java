@@ -1,4 +1,4 @@
-package shuaTi;
+package shuaTi.others;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package shuaTi;
+package shuaTi.others;
 
 /**
  * Created by stephen on 18-5-26.
