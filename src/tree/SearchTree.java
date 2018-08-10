@@ -1,6 +1,4 @@
-package shuaTi.tree;
-
-import sun.reflect.generics.tree.Tree;
+package tree;
 
 /**
  * Created by stephen on 18-6-16.

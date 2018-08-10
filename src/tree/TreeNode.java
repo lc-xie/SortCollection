@@ -1,4 +1,4 @@
-package shuaTi.tree;
+package tree;
 
 /**
  * Created by stephen on 18-6-15.

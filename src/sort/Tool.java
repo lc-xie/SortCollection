@@ -7,12 +7,27 @@ package sort;
 public class Tool {
     /**
      * 打印数组元素
+     *
      * @param arr 数组
      */
-    public static void printArr(int [] arr){
-        for (int a:arr){
-            System.out.print(a+" ");
+    public static void printArr(int[] arr) {
+        System.out.print("out: ");
+        for (int a : arr) {
+            System.out.print(a + " ");
         }
         System.out.println();
+    }
+
+    /**
+     * 交换数组两个位置的值
+     *
+     * @param arr
+     * @param a
+     * @param b
+     */
+    public static void swap(int[] arr, int a, int b) {
+        int t = arr[a];
+        arr[a] = arr[b];
+        arr[b] = t;
     }
 }

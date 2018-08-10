@@ -1,7 +1,4 @@
-package shuaTi.tree;
-
-import java.util.ArrayList;
-import java.util.List;
+package tree;
 
 /**
  * Created by stephen on 18-6-15.

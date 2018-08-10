@@ -11,24 +11,29 @@ import java.lang.ref.Reference;
  * Created by stephen on 18-5-11.
  */
 public class Tets {
-
-    static class Demo{
-        int lable;
-        Demo next;
-
-        public Demo(int lable){
-            this.lable=lable;
-        }
-    }
     
     public static void main(String[] args){
-        Demo demo1=new Demo(2);
-        Demo demo2=new Demo(3);
-        demo1.next=demo2;
-        Map<Integer,Demo> map=new HashMap<>();
-        map.put(demo1.lable,demo1);
-        map.put(demo2.lable,demo2);
-        demo2.next=demo1;
-        System.out.print(map.get(demo2.lable).next.lable);
+        int[] arr = new int[]{3,2,7,5,8,1,4};
+        quickSort(arr,0,6);
+        for (int t:arr){
+            System.out.print(t+" ");
+        }
+    }
+
+    public static void quickSort(int[] arr, int l, int r) {
+        if (l>=r)return;
+        int j=l;
+        for (int i=l; i<r; i++){
+            if (arr[i]<arr[r]){
+                int t = arr[j];
+                arr[j++] = arr[i];
+                arr[i] = t;
+            }
+        }
+        int tt = arr[j];
+        arr[j] = arr[r];
+        arr[r] = tt;
+        quickSort(arr, l, j-1);
+        quickSort(arr, j+1, r);
     }
 }

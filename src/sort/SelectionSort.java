@@ -8,23 +8,24 @@ package sort;
  * 时间复杂读: O(n^2),最差:O(n^2),最优:O(n^2)
  */
 public class SelectionSort {
+
     public static void main(String[] args) {
         int[] arr = new int[]{2, 4, 1, 7, 5, 8, 9, 3, 0, 6};
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
-            int min=i;//当前最小元素的位置
-            for (int j=i+1;j<n;j++){
-                if (arr[min]>arr[j]){
-                    min=j;
+            int min = i;//当前最小元素的位置
+            for (int j = i + 1; j < n; j++) {
+                if (arr[min] > arr[j]) {
+                    min = j;
                 }
             }
             //交换
-            if (i!=min) {
-                int temp = arr[min];
-                arr[min] = arr[i];
-                arr[i] = temp;
+            if (i != min) {
+                Tool.swap(arr, min, i);
             }
-            Tool.printArr(arr);
+            //Tool.printArr(arr);
         }
+        Tool.printArr(arr);
     }
+
 }
